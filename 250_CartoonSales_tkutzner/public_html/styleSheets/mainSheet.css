@@ -1,0 +1,240 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 4, 2014, 10:08:37 AM
+    Author     : macowner
+*/
+
+
+body{
+    background-color: darkorange;
+    marging: 0px;
+    color: li
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:1360px;
+}
+body h3{
+    font-size: x-large;
+}
+body h1{
+    font-size: xx-large;
+}
+.title{
+    padding-left: 1em;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslateblue;
+}
+
+.nav1{
+    display: inline-block;
+    margin-left: 20px;
+    float: left;
+    max-width: 135px;
+}
+.mainTable{
+    margin: 1em;
+    padding: 1em;
+}
+.mainTable #first{
+    padding-right: 1em;
+}
+.mainTable #midBit{
+    border-left: solid black 1px;
+    padding-left:1em;
+}
+.mainTable b{
+    font-size: 120%;
+}
+
+.merchandiseTable{
+    display: inline;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 78%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #005B2E;
+    float: right;
+    font-size: small;
+    border-left: solid black 1px;
+}.merchandiseTable td{
+    padding: 15px;
+}.merchandiseTable .image{
+    text-align: center;
+    width: 50px;
+}.merchandiseTable .descrip{
+    width: available;
+}
+.merchandiseTable .order{
+    width:  100px;
+}.merchandiseTable .mercCounter{
+    resize: none;
+    float:right;
+    margin-bottom: 5px;
+    margin-right: 25px;
+    margin-top: -2px;
+    padding-bottom: 0px;
+    font-size: 200%;
+}
+.arrow-up {
+    cursor: crosshair;
+    width: 0px; 
+    height: 0px; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;	
+    border-bottom: 8px solid #005B2E;
+    float: right;
+    margin-top: .2em;
+    margin-left: -8px;
+    padding: -8px;
+    margin-right: 0px;
+}
+.arrow-down {
+    cursor: crosshair;
+    width: 0px; 
+    height: 0px; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;	
+    border-top: 8px solid #005B2E;
+    float: right;
+    margin-top: 1em;
+    padding: 0px;  
+    padding-right: -8px;
+    margin-right: -8px;
+    margin-left: 5px;
+}
+#purchase{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/////////////////////////////////////////////////////////////////////////////
+
+.nav {
+    margin: 0px;
+    margin-top: -100px;
+    padding: 0px;
+    padding-top: -100px;
+    list-style-type: none;
+    height: 10em;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;    
+    color: #005B2E;   
+}
+.nav a:link{
+    text-decoration: none;
+}
+.nav a:visited{
+    text-decoration: none;
+}
+.category {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    margin-top: .5em;
+    margin-bottom: .25em;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #005B2E;
+}.category a:visited{
+    color: #005B2E;
+}.category a:link{
+    color: #005B2E;
+}
+.subcategory {
+    display: none;
+    list-style-type: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: .1em;
+    margin-bottom: .1em;
+}
+.subcategory a:link {
+    color: #005B2E;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: .1em;
+}
+.subcategory a:hover {
+    color: #660000;
+    font-weight: bold;
+    border: 1px solid #660000;
+    background-color:  #66CC33 ;
+    padding: .1em;
+}
+.subcategory a:visited{
+    color: #005B2E;
+}
+#midBit{
+    min-width: 2em;
+    margin-right: 12em;
+    font: sans-serif;
+    border: .5em solid purple;
+}#midBit p{
+    padding: 1em;
+}
+
+/////////////////////////////Shopping Cart///////////////////
+#jstable{
+    column-width: 100px;
+    z-index: -1;
+}
+.sctable{
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 55px;
+    //border: thin solid black;
+    // border-radius: 2px;   
+}.sctable td{
+    border: thin solid black;
+    padding: 15px;
+    min-width: 5em;
+}.sctable th{
+    font-weight: bold;
+    color: #005B2E;
+    text-align: right;
+    border: thin solid black;
+    padding: 5px;
+    padding-bottom: 2px;
+} 
+#sctableTot{
+    text-align: right;
+}
+.scBox {
+    max-width: 45px;
+    float: right;
+}
+#cartDefault{
+    display: block;
+    padding-left: 255px;
+}
+#subBut{
+    text-align: center;
+}
+///////////////////////////////Checkout Page//////////////////////////////
+
+#coTable{
+    //display: inline-block;
+    //vertical-align: top;
+    margin-left: 255px;
+    width: 75%;
+}
+
+.leftMost{
+    border-left: solid 2px black;
+    padding-left: 10px;
+}
+
+.rightMost{
+    margin-right: 10px;
+}
+
+#coTable input[type="text"]{
+    min-width: 145px;
+    float: left;
+}

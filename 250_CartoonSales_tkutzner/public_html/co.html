@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Checkout Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" type="text/css" href="styleSheets/mainSheet.css"/>
+        <link rel="stylesheet" media="screen" type="text/css" href="styleSheets/EMreset.css"/>
+        <script src="javaScripts/javascriptMain.js">
+        </script>
+    </head>
+    <body>
+        <div class="title"><h1><a href="index.html">Checkout Page</a></h1></div>
+        <div class="nav1">
+            <p class="category"><a href="index.html">Home</a></p>
+            <p id="contemp" class="category">Contemporary</p>
+            <ul class="subcategory" id="subcategoryone">
+                <li><a id="dilbert" href="dilbert.html">Dilbert</a></li>
+                <li><a id="samuraijack" href="samuraijack.html">Samurai Jack</a></li>
+            </ul>
+            <p id="classic" class="category">Classic</p>
+            <ul class="subcategory" id="subcategorytwo">
+                <li><a id="watchmen" href="watchmen.html">Watchmen</a></li>
+                <li><a id="darkknight" href="darkknight.html">Dark Knight Returns</a></li>
+            </ul>
+            <p id="children" class="category">Children</p>
+            <ul class="subcategory" id="subcategorythree">
+                <li><a id="farside" href="farside.html">The Far Side</a></li>
+            </ul>
+            <p class="category" id ="sc"><a href="sc.html">Shopping Cart</a></p>
+            <p class="category" id ="pp"><a href="pp.html">Policies &amp; Procedures</a></p>
+        </div>
+        <form method="post" action="phpProgram.php" onsubmit="return checkForm();" id="coTable" name="infoForm">
+            <table  onload="makeTable()">
+                <tr><th colspan="2">Shipping Address</th><th colspan="2">Billing Address</th></tr>
+                <tr><td>Name:</td><td><input type="text" class="rightMost" id="shipName" name="shipNameN" onchange="cookieThis(this.value, this.id)"/></td>
+                    <td class="leftMost" colspan="2"><input type="checkbox" id="checkBox" onchange="fillForm(this.ischecked)" />Click if same as shipping address</td></tr>
+                <tr><td>Address 1:</td><td><input type="text" class="rightMost" id="shipAdd1" name="shipAdd1N" onchange="cookieThis(this.value, this.id)"/></td>
+                    <td class="leftMost">Name: </td><td><input type="text" id="billName" name="billNameN" onchange="cookieThis(this.value, this.id)"/></td></tr>
+                <tr><td>Address 2:</td><td><input type="text" class="rightMost" id="shipAdd2" name="shipAdd2N" onchange="cookieThis(this.value, this.id)"/></td>
+                    <td class="leftMost">Address 1:</td><td><input type="text" id="billAdd1" name="billAdd1N" onchange="cookieThis(this.value, this.id)"/></td></tr>
+                <tr><td>City:</td><td><input type="text" class="rightMost" id="shipCity" name="shipCityN" onchange="cookieThis(this.value, this.id)"/></td>
+                    <td class ="leftMost">Address 2:</td><td><input type="text" id="billAdd2" name="billAdd2N" onchange="cookieThis(this.value, this.id)"/></td></tr>
+                <tr><td colspan="2">State/Province/Region:</td>
+                    <td class="leftMost">City:</td><td><input type="text" id="billCity" name="billCityN" onchange="cookieThis(this.value, this.id)"/></td></tr>
+                
+                <tr><td>Country:</td><td><select name="shipCountryN" id="shipCountry" onchange="cookieThis(this.value, this.id)">
+                            <option value="Australia">Australia</option>
+                            <option value="Britain">Britain</option>
+                            <option value="Canada">Canada</option>
+                            <option value="USA" selected>USA</option></select></td>
+                    <td colspan="2" class="leftMost">State/Province/Region:</td></tr>
+                <tr><td>Postal Code:</td><td><input type="text" class="rightMost" id="shipPostCode" name="shipPostCodeN" onchange="cookieThis(this.value, this.id)"/></td>
+                    <td class="leftMost">Country:</td><td><select id="billCountry" name="billCountryN" onchange="cookieThis(this.value, this.id)">
+                            <option value="Australia">Australia</option>
+                            <option value="Britain">Britain</option>
+                            <option value="Canada">Canada</option>
+                            <option value="USA" selected>USA</option></select></td></tr>
+                <tr><td colspan="2"></td>
+                    <td class="leftMost">Postal Code:</td><td><input type="text" id="billPostCode" name="billPostCodeN" onchange="cookieThis(this.value, this.name)"/></td></tr>
+                <tr><td colspan="2" class="leftMost"></td>
+                <tr><td colspan="2"></td><td class="leftMost"><input type="submit" class="rightMost" value="Submit My Order"/></td></tr>
+            </table>
+        </form>
+    </body>
+</html>
